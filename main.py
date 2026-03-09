@@ -27,7 +27,17 @@ print(mi_libro.prestar())
 print(mi_libro.devolver())
 
 
-catalogo = [mi_libro, otro_libro]
+catalogo = [
+    mi_libro,
+    otro_libro,
+]  # se crea una lista con los objetos libro, se pueden agregar más libros a la lista y luego iterar sobre ella para mostrar su información.
+# print(type(catalogo))
+# print(catalogo)
 
 for libro in catalogo:
     print(libro)
+
+
+print(
+    catalogo[0].titulo
+)  # se accede al título del primer libro en la lista utilizando el índice 0 y el atributo titulo del objeto libro.
